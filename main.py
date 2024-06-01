@@ -21,7 +21,7 @@ def get_latest_feeds(rss_url, num_feeds):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python rss_reader.py <rss_feed_url> [num_feeds]")
+        print("Usage: python3 rss_reader.py <rss_feed_url> [num_feeds]")
         sys.exit(1)
 
     rss_url = sys.argv[1]
