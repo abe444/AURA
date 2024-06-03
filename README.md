@@ -12,6 +12,10 @@ python3 main.py <rss_feed_url> [num_feeds]
 
 ### Example (.bashrc):
 ```
+# Fetch feeds
+alias feeds="tail $(grep -n '^\[alias\]' ~/.bashrc | head -n 1 | cut -d':' -f1) ~/.bashrc | grep -v '^\[alias\]' | sed 's/^alias //g'"
+
+# Articles/blogs here
 alias hackernews='python3 ~/AURA/main.py https://feeds.feedburner.com/TheHackersNews 5'
 alias phoronix='python3 ~/AURA/main.py https://www.phoronix.com/rss.php 5'
 ```
